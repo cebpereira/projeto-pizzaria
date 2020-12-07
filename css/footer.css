@@ -1,0 +1,14 @@
+
+footer{
+    background-image: url(../img/body.jpeg);
+    text-align: center;
+    font-size: 28px; 
+    font-family:Courier New;
+    font-weight: bold;
+
+    
+    padding-top: 0.2cm;
+    padding-bottom: 0.2cm;
+    padding: 0.5cm;
+    float: center;
+}

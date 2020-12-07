@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+<head>
+  <meta charset=”UTF-8”>
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/body.css">
+  <link rel="stylesheet" href="css/footer.css">
+  
+  <title>Pedidos</title>
+</head>
+<body>
+    
+    <!-- menu-->
+    <heade >
+      <div id="menu">   
+            <a id="logo">
+              <img src="img/pizza-prime-logotipo-header-v3.png">
+             <!--<h6> Lugar Nenhum, Nº00 - Jequié-BA</h6>-->
+            </a>
+            <a href="perfil.html">Login</a>
+            <a href="pedidos.html">Pedidos</a> 
+            <a href="suporte.html">Suporte</a>
+            <a href="perfil.html">Avaliar</a>
+       </div>
+     </heade>
+    
+    <!-- corpo -->
+    <div id="corpo">
+        
+        <div id="acesso_usuario">
+            <form id="login">
+                <input style="border-radius: 10px;" type="text" placeholder="Insira seu nome" name="apelido" id="apelido"  />
+                <input type="submit" value="Entrar"  />
+              </form>
+        </div>
+
+        <div id="sala_chat">
+            <h2 style="color: white; text-align: center;">Chat Online</h2>
+                    <div id="historico_mensagens"></div>
+                    
+                    <!-- <select multiple="multiple" id='lista_usuarios'>
+                        <option value=' '>Todos</option>
+                    </select> -->
+                    
+                    <form id="chat">
+                    <input style="border-radius: 10px;" type='text' id='mensagem' name='Mensagem' />
+                    <input style="float: center;" type='submit' value='Enviar' /> 
+                </form>
+        </div>
+    </div>
+    
+    <!-- rodapé -->
+    <footer>
+      <div id="redes_sociais">
+        <img src="https://img.icons8.com/android/48/000000/facebook-new.png"/> Pizza  
+        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/instagram-new.png"/> @Pizza.Ria  
+        <img src="https://img.icons8.com/material-sharp/48/000000/whatsapp.png"/> (00) 000000000  
+      </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+
+
+  <script type="text/javascript">
+    var socket = io.connect();
+
+
+
+    $("form#chat").submit(function(e){
+      e.preventDefault();
+
+      var mensagem = $(this).find("#mensagem").val();
+      var usuario = $("#lista_usuarios").val();
+
+      socket.emit("enviar mensagem", {msg: mensagem, usu: usuario}, function(){
+            $("form#chat #mensagem").val("");
+      });
+    });
+
+              
+      socket.on("atualizar mensagens", function(dados){
+        var mensagem_formatada = $("<p />").text(dados.msg).addClass(dados.tipo);
+
+        $("#historico_mensagens").append(mensagem_formatada);
+      });
+
+
+    $("form#login").submit(function(e){
+      e.preventDefault();
+
+      socket.emit("entrar", $(this).find("#apelido").val(), function(valido){
+        if(valido){
+          $("#acesso_usuario").hide();
+          $("#sala_chat").show();
+        }
+        else{
+          $("#acesso_usuario").val("");
+          alert("Este nome já é utilizado");
+        }
+      });
+    });
+
+
+
+      socket.on("atualizar usuarios", function(usuarios){
+        $("#lista_usuarios").empty();
+        $("#lista_usuarios").append("<option value= ' '> Todos</option>");
+        
+        $.each(usuarios, function(indice){
+          var opcao_usuario = $("<option/>").text(usuarios[indice]);
+          $("#lista_usuarios").append(opcao_usuario);
+        });
+      });
+
+</script>
+</body>
+</html>
