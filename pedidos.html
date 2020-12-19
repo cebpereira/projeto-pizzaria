@@ -18,33 +18,61 @@
 
             <nav class="menu">
               <ul>
-                <li><a href="perfil.html">Login</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li> 
                 <li><a href="suporte.html">Suporte</a></li>
-                <li><a href="perfil.html">Avaliar</a></li>
               </ul>
             </nav>
      </header>
     
     <!-- corpo -->
-    <div id="corpo">
-      <div id="escopo">
-        <button style="float: right;">Alterar</button>
-        <h3 >Pedido <output>NºPedido</output></h3>
-        <h3>Data <output>01/12/2020</output></h3>
+    <div class="example">
+      <div id="pedido">
+        <form>
           <div>
-            <output>Nome</output>
-            <output style="margin-left: 650px;">Valor</output>
+            <label for="numPedido">Pedido <output>#12345</output></label>
+            <label for="data">Data: <output>01/12/2020</output></label>
+            </label for="valor">Total: <output>R$60</output></label>
           </div>
+  
+          <ul>
+            <li>1x Pizza G Calabresa</li>
+            <li>1x Coca Cola 2L</li>
+          </ul>
+        </form>
       </div>
-    
-    </div>
-    
-    <div id="carrinho">
-      Carrinho <img src="https://img.icons8.com/metro/26/000000/shopping-cart.png"/> | R$ 
-      <input style="height: 30px; width: 120px;">
-      </input>
-      <button style="height: 40px; width: 80px; font-weight: bold;">Finalizar</button>
+
+      <div id="pedido">
+        <form>
+          <div>
+            <label for="numPedido">Pedido <output>#12346</output></label>
+            <label for="data">Data: <output>02/12/2020</output></label>
+            </label for="valor">Total: <output>R$45</output></label>
+          </div>
+  
+          <ul>
+            <li>1x Pizza M Frango</li>
+            <li>1x Fanta 1L</li>
+          </ul>
+        </form>
+      </div>
+
+      <div id="pedido">
+        <form>
+          <div>
+            <label for="numPedido">Pedido <output>#12347</output></label>
+            <label for="data">Data: <output>03/12/2020</output></label>
+            </label for="valor">Total: <output>R$30</output></label>
+          </div>
+  
+          <ul>
+            <li>1x Pizza G Frango com Catupiry</li>
+            <li>1x Fanta 2L</li>
+          </ul>
+        </form>
+      </div>
+      
     </div>
 
     <!-- rodapé -->

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/header.css">
   
-  <title>Pedidos</title>
+  <title>Cadastrar Produto</title>
 </head>
 <body>
     
@@ -18,51 +18,86 @@
 
             <nav class="menu">
               <ul>
-                <li><a href="perfil.html">Login</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li> 
                 <li><a href="suporte.html">Suporte</a></li>
-                <li><a href="perfil.html">Avaliar</a></li>
               </ul>
             </nav>
      </header>
     
     <!-- corpo -->
-    <div id="corpo">
-      <div id="escopo">
+    <div>
+      <div class="perfil">
+        <form>
+          <div>
+            <label for="codigo">Código Produto:</label>
+            <input type="text" size="30" id="codigo"/>
+          </div>
 
-        <h1 style="text-align: center;">Cadastrar Produto</h1>
+          <div>
+            <label for="nomeProduto">Nome Produto:</label>
+            <input type="text" size="50" id="nomeProduto"/>
+          </div>
 
-        <h4>Código Produto <input type="number"></h4>
+          <div>
+            <label for="tipo">Tipo Produto:</label>
+            <input type="text" size="20" id="tipo"/>
+          </div>
 
-        <h4>Nome do Produto <input type="text"> </h4>
+          <div>
+            <label for="estoqueMin">Estoque Minimo:</label>
+            <input type="number" size="20" id="estoqueMin"/>
+          </div>
 
-        <h4>Tipo <input type="text"> </h4>
-      
-        <h4>Estoque Minimo <input type="number"> </h4>
-        <h4>Estoque Máximo <input type="number"> </h4>
+          <div>
+            <label for="estoqueMax">Estoque Máximo:</label>
+            <input type="number" size="20" id="estoqueMax"/>
+          </div>
 
-        <h4>Valor de Custo <input type="number"> </h4>
-        <h4>Valor do Lucro  <input type="number"> </h4>
-        <h4>Preço de Venda <input type="number"> </h4>
+          <div>
+            <label for="valorCusto">Valor Custo:</label>
+            <input type="tel" size="20" id="valorCusto"/>
+          </div>
 
+          <div>
+            <label for="valorLucro">Valor Lucro:</label>
+            <input type="tel" size="20" id="valorLucro"/>
+          </div>
 
+          <div>
+            <label for="precoVenda">Preço de Venda:</label>
+            <input type="tel" size="20" id="precoVenda"/>
+          </div>
+        </form>
 
-        <div id="busca">
-          <input type="text"> <input type="search"> <button>Buscar</button> 
-
-          <table>
-
-          </table>
-
-        </div>
-
-        <div style="margin-left: 35%  ; margin-top: 0.5cm;">
-          <button>Incluir</button>  <button>Editar</button>  <button>Excluir</button>  <button>Salvar</button>  <button>Cancelar</button>
-        </div>
-
-      </div>
+        <div class="perfil">
+          <form>
+            <div>
+              <label for="buscaProdutoNome">Buscar Produto por Nome:</label>
+              <input type="text" size="50" id="buscaProdutoNome"/>
+            </div>
     
-    </div>
+            <div>
+              <label for="buscaProdutonNumero">Buscar Produto por Número:</label>
+              <input type="text" size="50" id="buscaProdutonNumero"/>
+            </div>
+
+            <button type="button">Buscar</button>
+
+          </form>
+        </div>
+        
+        <div class="botoes">
+          <form>
+            <button type="button">Incluir</button>
+            <button type="button">Editar</button>
+            <button type="button">Excluir</button>
+            <button type="submit">Salvar</button>
+            <button type="button">Cancelar</button>
+          </form>
+        </div>
+      </div>
     
     <!-- rodapé -->
     <footer>

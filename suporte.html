@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/header.css">
   
-  <title>Pedidos</title>
+  <title>Suporte</title>
 </head>
 <body>
     
@@ -18,37 +18,35 @@
 
             <nav class="menu">
               <ul>
-                <li><a href="perfil.html">Login</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li> 
                 <li><a href="suporte.html">Suporte</a></li>
-                <li><a href="perfil.html">Avaliar</a></li>
               </ul>
             </nav>
      </header>
     
     <!-- corpo -->
-    <div id="corpo">
-        
-        <div id="acesso_usuario">
-            <form id="login">
-                <input style="border-radius: 10px;" type="text" placeholder="Insira seu nome" name="apelido" id="apelido"  />
-                <input type="submit" value="Entrar"  />
-              </form>
-        </div>
+    <div class="corpo">
+        <h2>Chat suporte</h2>
+        <form>
+          <div>
+            <label for="nome">Nome de Usuário:</label>
+            <input type="text" size="30" id="nome"/>
+          </div>
 
-        <div id="sala_chat">
-            <h2 style="color: white; text-align: center;">Chat Online</h2>
-                    <div id="historico_mensagens"></div>
-                    
-                    <!-- <select multiple="multiple" id='lista_usuarios'>
-                        <option value=' '>Todos</option>
-                    </select> -->
-                    
-                    <form id="chat">
-                    <input style="border-radius: 10px;" type='text' id='mensagem' name='Mensagem' />
-                    <input style="float: center;" type='submit' value='Enviar' /> 
-                </form>
-        </div>
+          <div id="sala_chat">
+            <div id="historico_mensagens"></div>
+            
+            <!-- <select multiple="multiple" id='lista_usuarios'>
+                <option value=' '>Todos</option>
+            </select> -->
+
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="mensagem"/>
+            <button type="button">Enviar</button>
+          </div>
+        </form>
     </div>
     
     <!-- rodapé -->
@@ -65,9 +63,9 @@
     </footer>
 
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-    <script src="chat.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
 
 
   <script type="text/javascript">

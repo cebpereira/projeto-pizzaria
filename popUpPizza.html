@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/header.css">
   
-  <title>Pedidos</title>
+  <title>Pizzas</title>
 </head>
 <body>
     
@@ -18,21 +18,54 @@
 
             <nav class="menu">
               <ul>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="perfil.html">Login</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li> 
                 <li><a href="suporte.html">Suporte</a></li>
-                <li><a href="perfil.html">Avaliar</a></li>
               </ul>
             </nav>
      </header>
     
-    <!-- corpo -->
-    <div id="corpo">
-      <div id="escopo">
+     <!-- corpo-->
+     <div class="itens">
+      <form>
+        <ol>
+          <div>
+            <h2>1. Calabresa</h2>
+            <p>Calabresa, mussarela, cebola e molho</p>
+            <button type="button" id="btnItem">adicionar</button>
+            <hr size="2">
+          </div>
 
+          <div>
+            <h2>2. Frango</h2>
+            <p>Frango, mussarela, cebola e molho</p>
+            <button type="button" id="btnItem">adicionar</button>
+            <hr size="2">
+          </div>
 
-      </div>
-    
+          <div>
+            <h2>3. Calabresa com Cheddar</h2>
+            <p>Calabresa, cheddar, mussarela, cebola e molho</p>
+            <button type="button" id="btnItem">adicionar</button>
+            <hr size="2">
+          </div>
+
+          <div>
+            <h2>4. Frango com Catupiry</h2>
+            <p>Frango, catupiry, mussarela, cebola e molho</p>
+            <button type="button" id="btnItem">adicionar</button>
+            <hr size="2">
+          </div>
+        </ol>
+      </form> 
+    </div>
+
+    <!-- carrinho -->
+    <div class="carrinho">
+      Carrinho <img src="https://img.icons8.com/metro/26/000000/shopping-cart.png"/> | R$ 
+        <input style="height: 30px; width: 120px;"></input>
+        <button style="height: 40px; width: 80px; font-weight: bold;"><a href="finalizarPedido.html">Finalizar</a></button>
     </div>
     
    <!-- rodapé -->
