@@ -1,0 +1,13 @@
+{
+	"name": "",
+	"email": "",
+	"password": "",
+	"telefone": "",
+	
+	"endereco": {
+		"logradouro": "",
+		"bairro": "",
+		"numero": "",
+		"complemento": ""
+	}
+}

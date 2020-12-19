@@ -22,6 +22,14 @@ td{
 
 input{
   border-radius: 10px;
+}
+
+#carBtn{
+  height: 30px;
+  width: 120px;
+}
+
+#carValue{
   height: 30px;
   width: 120px;
 }
@@ -141,4 +149,8 @@ label {
 #mensagem{
   width: 400px;
   height: 80px;
+}
+
+#carBtn a{
+  text-decoration: none;
 }
