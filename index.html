@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/painel.css">
   
     <title>Pizzaria</title>
   </head>
@@ -28,14 +29,75 @@
      </header>
 
 
-     <section class="modelo">
-       <h1>Aqui ficara o conteudo do site incluindo promoções, pizzas e bebidas!!</h1>
-     </section>
+     <div class="container produtos">
+      <!--Inicio painel pizzas-->
+      <section class="painel pizzas">
+          <h2>Pizzas</h2>
+
+          <ol>
+              <!--1 produto-->
+              <li>
+                  <a href="popUpPizza.html">
+                      <figure>
+                          <img src="img/unnamed.jpg" alt="Pizza">
+                          <link href="produto.html">
+                          <figcaption>Pizza P R$20</figcaption>
+                      </figure>
+                  </a>
+              </li>
+              <!--Fim produto 1-->
+
+              <!--2 produto-->
+              <li>
+                <a href="popUpPizza.html">
+                    <figure>
+                        <img src="img/pizzaM.jpg" alt="Pizza">
+                        <link href="produto.html">
+                        <figcaption>Pizza M R$30</figcaption>
+                    </figure>
+                </a>
+            </li>
+              <!--Fim produto 2-->
+
+              <!--3 produto-->
+              <li>
+                <a href="popUpPizza.html">
+                    <figure>
+                        <img src="img/pizzaG.jpg" alt="Pizza">
+                        <link href="produto.html">
+                        <figcaption>Pizza G R$40</figcaption>
+                    </figure>
+                </a>
+            </li>
+              <!--Fim produto 3-->
+          </ol>
+      </section>
+      <!--Fim painel pizzas-->
+
+      <!--Inicio painel bebidas-->
+      <section class="painel bebidas">
+          <h2>Bebidas</h2>
+          <ol>
+
+              <!--1 produto-->
+              <li>
+                  <a href="popUpBebidas.html">
+                      <figure>
+                          <img src="img/bebidas.jpg" alt="bebidas">
+                          <figcaption>A partir de R$5,00</figcaption>
+                      </figure>
+                  </a>
+              </li>
+              <!--Fim produto 1-->
+          </ol>
+      </section>
+  </div>
+<!--Fim paineis-->
     
     <div class="carrinho">
       Carrinho <img src="https://img.icons8.com/metro/26/000000/shopping-cart.png"/> | R$ 
-        <input style="height: 30px; width: 120px;"></input>
-        <button style="height: 40px; width: 80px; font-weight: bold;"><a href="finalizarPedido.html">Finalizar</a></button>
+        <input type="text"></input>
+        <button type="submit"><a href="finalizarPedido.html">Finalizar</a></button>
     </div>
 
     <!-- rodapé -->

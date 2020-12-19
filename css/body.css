@@ -22,7 +22,8 @@ td{
 
 input{
   border-radius: 10px;
-   
+  height: 30px;
+  width: 120px;
 }
 
 button{
@@ -80,13 +81,13 @@ button{
 }
 
 .modelo{
-    margin: 300px;
+  margin: 300px;
 }
 
 .perfil{
-    text-align: center;
-    position: center;
-    margin-top: 100px;
+  text-align: center;
+  position: center;
+  margin-top: 100px;
 }
 
 .botoes{
@@ -95,11 +96,15 @@ button{
 }
 
 .button {
-    padding-left: 90px;
+  padding-left: 90px;
 }
 
 button {
-    margin-left: .5em;
+  margin-left: .5em;
+}
+
+.botoes a{
+  text-decoration: none;
 }
 
 form {

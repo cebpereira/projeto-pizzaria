@@ -1,0 +1,54 @@
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+
+    border-radius: 15px;
+}
+
+.pizzas {
+    background-image: url("../img/fundo2.jpg");
+    margin-left: 345px;
+    width: 680px;
+}
+
+.pizzas img{
+    border-radius: 15px;
+}
+
+.bebidas {
+    background-image: url("../img/fundoB.jpg");
+    margin-left: 345px;
+    width: 680px;
+    height: 300px;
+    position: relative;
+}
+
+.bebidas img{
+    border-radius: 15px;
+}
+
+.painel li{
+    display: list-item; 
+
+}
+
+.painel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(223, 132, 13);
+
+    margin-bottom: 10px;
+}
+
+.painel a{
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+figure figcaption{
+    color: rgb(223, 132, 13);
+}
