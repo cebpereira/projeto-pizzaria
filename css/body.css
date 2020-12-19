@@ -24,6 +24,7 @@ input{
   border-radius: 10px;
 }
 
+
 #carBtn{
   height: 30px;
   width: 120px;
@@ -59,22 +60,19 @@ button{
 }
 
 .carrinho{
-    background-image: linear-gradient(109deg, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 70%);
+    background-color: #FFC086;
     text-align: center;
     font-size: 20px; 
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     border-radius: 20px;
-    width: 25cm;
     padding: 0.5cm;
 
-    height: 30px;
-    left: 85%;
-    margin-left: -800px;
-    margin-top: -120px;
-    position: fixed;
-    top: 95%;
-    width: 600px;
+    width: 300px;
+    height: 80px;
+    margin-left: 540px;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 #escopo{
@@ -94,8 +92,8 @@ button{
 
 .perfil{
   text-align: center;
-  position: center;
-  margin-top: 100px;
+  position: left;
+  margin-top: 10px;
 }
 
 .botoes{
@@ -116,8 +114,8 @@ button {
 }
 
 form {
-    margin: 0 auto;
-    width: 400px;
+    margin-left: 380px;
+    width: 600px;
 
     padding: 1em;
     border: 1px solid #CCC;
