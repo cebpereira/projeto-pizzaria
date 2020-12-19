@@ -1,71 +1,54 @@
 <!DOCTYPE HTML>
-<html lang=”pt-br”>
-<head>
-  <meta charset=”UTF-8”>
+<html>
+  <head>
+    <meta charset=”UTF-8”>
 
-  <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="css/body.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
   
-  <title>Pizzaria</title>
-</head>
-<body>
+    <title>Pizzaria</title>
+  </head>
+
+  <body>
     
     <!-- menu-->
-    <heade >
-      <div id="menu">   
-            <a id="logo">
-              <img src="img/pizza-prime-logotipo-header-v3.png">
-             <!--<h6> Lugar Nenhum, Nº00 - Jequié-BA</h6>-->
-            </a>
-             <a href="perfil.html">Login</a>
-             <a href="pedidos.html">Pedidos</a> 
-             <a href="perfil.html">Suporte</a>
-            <a href="popUpCadastrarProduto.html">Cadastrar Produtos</a>
-       </div>
-     </heade>
+    <header class="container">
+      <h1><img src="img/pizza-prime-logotipo-header-v3.png" alt="Logo Pizza Prime"></h1>
+
+            <nav class="menu">
+              <ul>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li> 
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="perfil.html">Avaliar</a></li>
+              </ul>
+            </nav>
+     </header>
+
+
+     <section class="modelo">
+       <h1>Aqui ficara o conteudo do site incluindo promoções, pizzas e bebidas!!</h1>
+     </section>
     
-    <!-- corpo -->
-    <div id="corpo">
-      <h1 id="titulo">Promoções</h1>
-      <table>
-
-        <h2>Pizzas</h2>
-        <tr>
-          <td ><img src="/img/download.jpeg"> </td>
-          <td><img src="/img/MTA3MzJfL3RtcC9waHAxTnoxRFlfMTUzMDczNDU0OA==.jpg"> </td>
-          <td><img src="/img/speranza025.jpg.jpg"> </td>
-          <td><img src="/img/unnamed.jpg"> </td>
-        </tr>
-
-        <h2>Bebidas</h2>
-        <tr>
-          <td><img src="/img/pizza-prime-logotipo-header-v3.png"> </td>
-          <td><img src="/img/pizza-prime-logotipo-header-v3.png"> </td>
-          <td><img src="/img/pizza-prime-logotipo-header-v3.png"> </td>
-          <td><img src="/img/pizza-prime-logotipo-header-v3.png"> </td>
-        </tr>
-
-      </table>
-
+    <div class="carrinho">
+      Carrinho <img src="https://img.icons8.com/metro/26/000000/shopping-cart.png"/> | R$ 
+        <input style="height: 30px; width: 120px;"></input>
+        <button style="height: 40px; width: 80px; font-weight: bold;">Finalizar</button>
     </div>
-<!-- 
-    <div id="carrinho">
-    </div> -->
-  <div id="carrinho">
-    Carrinho <img src="https://img.icons8.com/metro/26/000000/shopping-cart.png"/> | R$ 
-    <input style="height: 30px; width: 120px;">
-    </input>
-    <button style="height: 40px; width: 80px; font-weight: bold;">Finalizar</button>
-  </div>
-    
+
     <!-- rodapé -->
     <footer>
-      <div id="redes_sociais">
-        <img src="https://img.icons8.com/android/48/000000/facebook-new.png"/> Pizza  
-        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/instagram-new.png"/> @Pizza.Ria  
-        <img src="https://img.icons8.com/material-sharp/48/000000/whatsapp.png"/> (00) 000000000  
+      <div class="container">
+
+        <ul class="social">
+          <li><a href="http://facebook.com/pizzaria">Facebook</a></li>
+          <li><a href="http://instagram.com/pizzaria">Instagram</a></li> 
+          <li><a href="http://whatsapp.com/pizzaria">Whatsapp</a></li>
+        </ul>  
+
       </div>
     </footer>
-</body>
+  </body>
 </html>

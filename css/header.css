@@ -1,0 +1,35 @@
+header{
+    background-image: url("../img/body.jpeg");
+
+    width: 100%;
+    height: 80px;
+}
+
+header .container{
+    position: absolute;
+}
+
+.menu ul{
+    font-size: 15px;
+}
+
+.menu a{
+    color: #003366;
+}
+
+.menu ul li{
+    display: inline;
+    margin-left: 20px;
+    padding-top: 8px;
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+}
+
+.menu{
+    position: absolute;
+    top: 55px;
+    right: 10px;
+}

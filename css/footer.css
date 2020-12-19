@@ -1,14 +1,46 @@
-
+/*Rodapé*/
 footer{
     background-image: url(../img/body.jpeg);
-    text-align: center;
-    font-size: 28px; 
-    font-family:Courier New;
-    font-weight: bold;
 
-    
-    padding-top: 0.2cm;
-    padding-bottom: 0.2cm;
-    padding: 0.5cm;
-    float: center;
+    clear: both;
+    position: absolute;
+    width: 100%;
+    height: 80px;
 }
+
+footer .container{
+    position: static;
+}
+
+.social{
+    position: static;
+    top: 12px;
+    right: 0;
+}
+
+.social a{
+    height: 48px;
+    width: 48px;
+
+    display: inline-flex;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(https://img.icons8.com/android/48/000000/facebook-new.png);
+}
+
+.social a[href*="instagram.com"] {
+    background-image: url(https://img.icons8.com/fluent-systems-filled/48/000000/instagram-new.png);
+}
+
+.social a[href*="whatsapp.com"] {
+    background-image: url(https://img.icons8.com/material-sharp/48/000000/whatsapp.png);
+}
+
+.social li{
+    float: right;
+    margin-right: 25px;
+    position: static;
+}
+/*Fim rodapé*/

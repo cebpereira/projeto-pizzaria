@@ -1,4 +1,3 @@
-   
 body{
     background-image: url(../img/rodape.jpeg);
     position: absolute;
@@ -6,19 +5,19 @@ body{
     left: 0px;
     right: 0px;
     bottom: 0px;
-  }
+}
 
 table{
-    padding-top: 3%;
-    padding-left: 45%;
-    padding-right: 45%;
-    padding-bottom: 3%;
+  padding-top: 3%;
+  padding-left: 45%;
+  padding-right: 45%;
+  padding-bottom: 3%;
 }
 
 td{
-    border: 10px;
-    width: 70px;
-    height: 70px;
+  border: 10px;
+  width: 70px;
+  height: 70px;
 }
 
 input{
@@ -46,13 +45,13 @@ button{
     font-family:Courier New;
     font-weight: bold;
     padding: 0.5cm;
-  }
+}
 
-  #carrinho{
+.carrinho{
     background-image: linear-gradient(109deg, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 70%);
     text-align: center;
-    font-size: 30px; 
-    font-family:Courier New;
+    font-size: 20px; 
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     border-radius: 20px;
     width: 25cm;
@@ -60,14 +59,14 @@ button{
 
     height: 30px;
     left: 85%;
-    margin-left: -1000px;
-    margin-top: -150px;
+    margin-left: -800px;
+    margin-top: -120px;
     position: fixed;
     top: 95%;
     width: 600px;
-  }
+}
 
-  #escopo{
+#escopo{
     background-image: linear-gradient(109deg, rgb(245, 88, 16) 30%, rgb(250, 79, 0) 70%);
     opacity: 0.9;
     color: white;
@@ -76,4 +75,49 @@ button{
     width: 940px;
     padding: 1.5cm;
     text-align: justify;
-  }
+}
+
+.modelo{
+    margin: 300px;
+}
+
+.perfil{
+    text-align: center;
+    position: center;
+    margin-top: 100px;
+}
+
+.botoes{
+  text-align: center;
+  margin: 10px;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    text-align: left;
+    background-color: #FFC086;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+
+  display: inline-block;
+  width: 350px;
+  text-align: left;
+}
